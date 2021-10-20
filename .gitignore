@@ -1,3 +1,7 @@
 # Project exclude paths
 /duck_order_system/frontend/node_modules/
 /duck_order_system/frontend/static/frontend/
+/venv/
+.env
+*.pyc
+/__pycache__/
