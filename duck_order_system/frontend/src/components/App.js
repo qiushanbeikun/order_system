@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from 'react-dom';
+import Router from "./RouterPage";
+import RouterPage from "./RouterPage";
+
 
 
 export default class App extends Component {
@@ -12,6 +15,12 @@ export default class App extends Component {
     }
 }
 
+const NewApp = ({name, another}) => {
+    return (
+        <h1>New testing page{name} {another}</h1>
+    )
+}
+
 const appDiv = document.getElementById("app")
-render(<App />, appDiv)
+render(<RouterPage name='whatever' another='interesting'/>, appDiv)
 
