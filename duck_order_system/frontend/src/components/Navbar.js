@@ -26,7 +26,8 @@ export default function Navbar() {
                         sx={{ mr: 2 }}>
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant='h6' sx={{ flexGrow: 1 }}>MZFC's 鸭 Home</Typography>
+                    <Typography variant='h6' sx={{ flexGrow: 1 }}>I don't know what to write in the nav bar!</Typography>
+                    <Button color="inherit">Username</Button>
                     <Button color="inherit">Login</Button>
                     <Button color='inherit'>Logout</Button>
                 </Toolbar>
