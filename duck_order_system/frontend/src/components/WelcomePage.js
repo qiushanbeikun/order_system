@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import {SOnePadding} from "./BaseStyledComponents";
+import {SOnePadding} from "./Commons/BaseStyledComponents";
 import {Typography} from "@mui/material";
 import Button from "@mui/material/Button";
 import styled from "styled-components";

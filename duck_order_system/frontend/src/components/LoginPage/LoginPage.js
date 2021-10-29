@@ -34,9 +34,9 @@ export const LoginPage = () => {
                     </Grid>
                     <Grid sx={{m: 1, width: '50ch', padding: '0 0 0 1em'}}>
                         <FormControl>
-                            <Typography variant='h4'>Login</Typography>
+                            <Typography variant='h4'>Sign Up</Typography>
                             <LoginForm/>
-                            <RegistrationForm/>
+                            {/*<RegistrationForm/>*/}
                         </FormControl>
                     </Grid>
 

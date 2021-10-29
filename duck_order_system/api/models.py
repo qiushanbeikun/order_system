@@ -4,7 +4,9 @@ from django.conf import settings
 
 
 class Customer(models.Model):
-    phone = models.CharField(max_length=20)
+    phone = models.CharField(max_length=20, null=True)
+    # django default User model already have field email
+    # email = models.CharField(max_length=50, null=False, default='wrong email')
     customer_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     class Meta:

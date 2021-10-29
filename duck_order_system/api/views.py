@@ -1,14 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
-from rest_framework import generics, status
+from django.utils.decorators import method_decorator
+from rest_framework import generics, status, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import *
 from .serializers import *
+from django.db.models import Q
+from django.views.decorators.csrf import ensure_csrf_cookie, csrf_protect
 
 
 class CustomerView(generics.ListAPIView):
+    permission_classes = [permissions.AllowAny]
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
     http_method_names = ['get', 'post', 'head']

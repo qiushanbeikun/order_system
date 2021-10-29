@@ -11,6 +11,7 @@ router.register('api_customer', CustomerViewSet, 'customer')
 router.register('api_stuff', StuffViewSet, 'stuff')
 router.register('api_store', StoreViewSet, 'store')
 
+
 urlpatterns = [
     path('get_customer/', CustomerView.as_view()),
     path('get_stuff/', StuffView.as_view()),

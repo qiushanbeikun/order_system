@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import {SLink} from "./BaseStyledComponents";
+import {SLink} from "../Commons/BaseStyledComponents";
 
 
 export default function Footer() {

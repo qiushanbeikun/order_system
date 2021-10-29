@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 import WelcomePage from "./WelcomePage";
-import { LoginPage } from './LoginPage';
+import { LoginPage } from './LoginPage/LoginPage';
 
 export default class RouterPage extends Component {
     constructor(props) {
