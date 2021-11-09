@@ -25,6 +25,9 @@ export default function Footer() {
             <Container maxWidth='md'>
                 <Grid container spacing={2}>
                     <Grid item xs={4}>
+                        <Typography>Just to put something in the footer</Typography>
+                    </Grid>
+                    <Grid item xs={4}>
                         <Typography>Work by QiuShanBeiKun @ M Z F C</Typography>
                     </Grid>
                     <Grid item xs={4}>

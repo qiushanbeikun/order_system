@@ -1,11 +1,13 @@
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
+import {connect} from 'react-redux';
 import Container from "@mui/material/Container";
 import {Button, FormControl, Grid, Typography} from "@mui/material";
 import TextField from "@mui/material/TextField";
 import styled from "styled-components";
 
+
 const SBorder = styled.div`
-    padding: 5em 0;
+    padding: 3.5em 0;
 `;
 
 const FillBorder = styled.div`
@@ -34,9 +36,7 @@ export const LoginPage = () => {
                     </Grid>
                     <Grid sx={{m: 1, width: '50ch', padding: '0 0 0 1em'}}>
                         <FormControl>
-                            <Typography variant='h4'>Sign Up</Typography>
                             <LoginForm/>
-                            {/*<RegistrationForm/>*/}
                         </FormControl>
                     </Grid>
 
@@ -49,36 +49,17 @@ export const LoginPage = () => {
 const LoginForm = () => {
     return (
         <div>
+            <Typography variant='h4'>Login</Typography>
             <SBorder>
-                <Typography variant='subtitle1' color='red'>* Required Field</Typography>
                 <STextField fullWidth required id='email_field' label='Email Address' variant='filled'/>
                 <STextField fullWidth required id='password_field' label='Password' variant='filled'/>
             </SBorder>
-
+            <Button variant='contained'>Login</Button>
             <div className='row'>
-                <Button>Forgot Password?</Button>
-                <Button>Login</Button>
+                <Button>Forgot Password?(not implemented)</Button>
+                <Button href={'/registration/'}>Register</Button>
             </div>
         </div>
     )
 }
 
-const RegistrationForm = () => {
-    return (
-        <div>
-            <SBorder>
-                <Typography variant='subtitle1' color='red'>* Required Field</Typography>
-                <STextField fullWidth required id='email_field' label='Email Address' variant='filled'/>
-                <STextField fullWidth id='phone_number' label='Phone Number (optional)' variant='filled'/>
-                <STextField fullWidth required id='password_field' label='Password' variant='filled'/>
-                <STextField fullWidth required id='confirmed_password_field' label='Confirmed Password'
-                            variant='filled'/>
-            </SBorder>
-
-            <div className='row'>
-                <Button>Login</Button>
-                <Button>Register</Button>
-            </div>
-        </div>
-    )
-}
